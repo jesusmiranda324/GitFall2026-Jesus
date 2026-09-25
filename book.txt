@@ -1,0 +1,13 @@
+Percy Jackson is a boy who finds out that he is a demigod, which means he is half human and half god. His father is Poseidon, the Greek god of the sea. Percy goes to a special camp for demigods called Camp Half-Blood. Percy learns that Zeus’s powerful lightning bolt has been stolen. Zeus thinks Percy’s father took it. Percy goes on a journey with his friends Annabeth and Grover to find the lightning bolt and return it.On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   .gitignore
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	book.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
