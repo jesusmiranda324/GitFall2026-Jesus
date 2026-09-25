@@ -1,0 +1,130 @@
+ Answers for 5-33
+
+C:\Users\lifes\OneDrive\Desktop\Git Assignment\GitFall2026-Jesus>git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+C:\Users\lifes\OneDrive\Desktop\Git Assignment\GitFall2026-Jesus>
+
+commit e7fd94bc0664e9558068ae2836794523f93a497f (HEAD -> main, origin/main, origin/HEAD)
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Tue Sep 22 09:35:42 2026 -0500
+
+    Create .gitignore
+
+    Added .gitignore file
+
+commit 6aa1abee20eed47f2b9cc1f5aa21c19d72ab80ee
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Tue Sep 22 08:50:34 2026 -0500
+
+    Files added
+
+    Added files missing
+
+commit 5f75e751488fd0b16c81325c9ae814ff65f0c95b
+Merge: fca18d2 b3e573c
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Tue Sep 10 10:10:46 2024 -0500
+
+    Merge branch 'readme'
+    I do not like VI
+    that is what
+
+commit fca18d2606f45601cf99aec4f279339a0dee18d8
+Author: Esteban Parra <estebanpr014@gmail.com>
+Date:   Tue Sep 10 10:08:52 2024 -0500
+
+    BookShop class create
+C:\Users\lifes\OneDrive\Desktop\Git Assignment\GitFall2026-Jesus>git shortlog
+Esteban Parra (12):
+      starter files
+      added empty Main.java
+      Added names LinkedList
+      Added more names
+      Updated readme file
+      sllepy message
+      added another name
+      added another name
+      BookShop class create
+      Merge branch 'readme' I do not like VI that is what
+      Files added
+      Create .gitignore
+
+
+C:\Users\lifes\OneDrive\Desktop\Git Assignment\GitFall2026-Jesus>git log --graph
+* commit e7fd94bc0664e9558068ae2836794523f93a497f (HEAD -> main, origin/main, origin/HEAD)
+| Author: Esteban Parra <estebanpr014@gmail.com>
+| Date:   Tue Sep 22 09:35:42 2026 -0500
+|
+|     Create .gitignore
+|
+|     Added .gitignore file
+|
+* commit 6aa1abee20eed47f2b9cc1f5aa21c19d72ab80ee
+| Author: Esteban Parra <estebanpr014@gmail.com>
+| Date:   Tue Sep 22 08:50:34 2026 -0500
+|
+|     Files added
+|
+|     Added files missing
+|
+*   commit 5f75e751488fd0b16c81325c9ae814ff65f0c95b
+|\  Merge: fca18d2 b3e573c
+| | Author: Esteban Parra <estebanpr014@gmail.com>
+| | Date:   Tue Sep 10 10:10:46 2024 -0500
+| |
+| |     Merge branch 'readme'
+| |     I do not like VI
+| |     that is what
+| |
+| * commit b3e573c8b75940e9bbcda519b0bece046f4b60eb
+| | Author: Esteban Parra <estebanpr014@gmail.com>
+| | Date:   Tue Sep 10 10:06:47 2024 -0500
+| |
+| |     added another name
+
+C:\Users\lifes\OneDrive\Desktop\Git Assignment\GitFall2026-Jesus>git log --graph --oneline
+* e7fd94b (HEAD -> main, origin/main, origin/HEAD) Create .gitignore
+* 6aa1abe Files added
+*   5f75e75 Merge branch 'readme' I do not like VI that is what
+|\
+| * b3e573c added another name
+| * ea123f7 added another name
+| * 4cd474a sllepy message
+* | fca18d2 BookShop class create
+|/
+* 8228019 Updated readme file
+* 985e63e Added more names
+* 21ea409 Added names LinkedList
+* b02c65d added empty Main.java
+* bdd2fa9 starter filesgi
+
+origin
+
+C:\Users\lifes\OneDrive\Desktop\Git Assignment\GitFall2026-Jesus>git branch
+* feature1
+  main
+	-new branch created; on feature1 branch
+
+no inspiration.txt
+
+opens up a GUI for GitFall2026
+
+Answers for a - l:
+
+a. 14
+b. Thu Sep 24 19:24:24 2026 -0500
+c. git ls-tree -r --name-only "$(git rev-list -1 --before="2020-06-02" HEAD)"
+d. 1
+e. 1
+f. git log shows commit history while git log shows working directory and staging area
+g. summarizes the commit history
+h. git log -- Main.java
+i. git log --follow -p -- Main.java
+j. t log --grep="account"
+k. git log --author="Person Name"
+l. git log --author="Lauren" --since="2014-01-05" --until="2024-01-14"
+
