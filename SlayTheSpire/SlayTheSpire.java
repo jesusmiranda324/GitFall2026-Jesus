@@ -1,6 +1,7 @@
 import java.io.File;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
+import java.util.Random;
 
 
 class SlayTheSpire {
@@ -29,10 +30,17 @@ class SlayTheSpire {
                     }
                 }
             }
+            // Generates a random ID for the deck
+            int randomIDGenerator() {
+                    Random random = new Random();
+                    return random.nextInt(999999999);
+            }
 
             public static void main(String[] args) {
             System.out.println("Welcome to Slay the Spire!");
             //Calls the ReadFile class to read the input file for deck building
             ReadFile.main(null);
+            int deckID = new SlayTheSpire().randomIDGenerator();
+            System.out.println("Your deck ID is: " + deckID);
         }
     }
