@@ -1,0 +1,5 @@
+#PDF Library
+lib/
+
+#PDF Outputs
+*.pdf

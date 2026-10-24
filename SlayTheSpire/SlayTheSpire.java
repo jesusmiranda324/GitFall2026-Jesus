@@ -18,5 +18,8 @@ class SlayTheSpire {
             //Generates a random ID for the deck
             int deckID = RandomIDGenerator.createRandomID();
             System.out.println("Your deck ID is: " + deckID);
+            //Calls the CreateReport class to create a PDF report of the deck
+            CreateReport createReport = new CreateReport();
+            createReport.createReport(deckID);
             }
     }
