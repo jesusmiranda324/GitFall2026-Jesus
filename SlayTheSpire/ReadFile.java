@@ -11,10 +11,8 @@ public class ReadFile {
                         File file = new File("inputFileForSlayTheSpireDeck.txt");
                         Scanner scanner = new Scanner(file);
 
-                        //Sets the cardID as current size of the deck, which is used to assign a unique ID to each card
-                        int cardID = deck.size();
-
-                        //Reads the file and creates a deck of cards
+              
+                      //Reads the file and creates a deck of cards
                         try {
                             while (scanner.hasNextLine()) {
                                 String line = scanner.nextLine();
@@ -22,6 +20,7 @@ public class ReadFile {
                                 String cardName = line.substring(0, colonIndex);
                                 int cardCost = Integer.parseInt(line.substring(colonIndex + 1).trim());
                                 
+
                                 //Creates a new card object and adds it to the deck
                                 Card card = new Card(cardName, cardCost);
                                 deck.addCard(card);
@@ -35,5 +34,6 @@ public class ReadFile {
                     } catch (FileNotFoundException e) {
                         System.err.println("Error: inputFileForSlayTheSpireDeck.txt file not found");
                     }
-                }
+
+                }   
             }

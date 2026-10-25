@@ -11,7 +11,7 @@ import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.text.DocumentException;
 
 public class CreateReport {
-    void createReport(int deckID) {
+    void createReport(int deckID, Deck deck) {
         String filePath = "SpireDeck_" + String.valueOf(deckID) + ".pdf";
 
         // Create a new PDF document(included in the iText library)
@@ -23,6 +23,15 @@ public class CreateReport {
             document.open();
             document.add(new Paragraph("Slay the Spire Deck Report:"));
             document.add(new Paragraph("Deck ID: " + deckID));
+            document.add(new Paragraph("Total Cost: " + deck.getTotalCost(deck)));
+            
+            // Add the card's histogram in the deck to the report
+            document.add(new Paragraph("Cost Histogram:"));
+            int[] costHistogram = deck.getCostHistogram();
+            for (int i = 0; i < costHistogram.length; i++) {
+                document.add(new Paragraph("Cost " + i + ": " + costHistogram[i]));
+            }
+
             document.close();
 
             System.out.println("Report created successfully at: " + filePath);
