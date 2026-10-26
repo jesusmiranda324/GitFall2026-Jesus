@@ -1,12 +1,22 @@
 import java.io.File;
 import java.util.Scanner;
 import java.io.FileNotFoundException;
-import java.util.HashMap;
-import java.util.Map;
+ import java.util.ArrayList;
+ import java.util.List;
 
 // Reads the input file for deck building
 public class ReadFile {
-                public static void loadDeck(Deck deck) {
+    
+    // Creates an array of cards from the input file and adds them to invalidCards list if they are invalid
+    public static List<Card> invalidCards = new ArrayList<>();
+    public static int numberOfRows = 0;
+    public static boolean isOverAThousandCards = false;
+    
+    public static void loadDeck(Deck deck) {
+                invalidCards.clear();
+                numberOfRows = 0;
+                isOverAThousandCards = false;
+
                     try {
                         File file = new File("inputFileForSlayTheSpireDeck.txt");
                         Scanner scanner = new Scanner(file);
@@ -14,16 +24,31 @@ public class ReadFile {
               
                       //Reads the file and creates a deck of cards
                         try {
-                            while (scanner.hasNextLine()) {
+                            int numberOfCards = 0;
+                            while (numberOfCards <= 1000 && scanner.hasNextLine()) {
+                                numberOfRows++;
                                 String line = scanner.nextLine();
+
+                                //Checks to see if there are more than 1000 cards in the input file
+                                if (numberOfCards >= 1000) {
+                                    isOverAThousandCards = true;                                                             
+                                    continue;
+                                }
+
                                 int colonIndex = line.lastIndexOf(':');
                                 String cardName = line.substring(0, colonIndex);
                                 int cardCost = Integer.parseInt(line.substring(colonIndex + 1).trim());
+                                //Checks to see if the card cost is valid, if not, adds the card to the invalidCards list
+                                if (cardCost < 0 || cardCost > 6) {
+                                    invalidCards.add(new Card(cardName, cardCost));
+                                    continue;
+                                }
                                 
 
                                 //Creates a new card object and adds it to the deck
                                 Card card = new Card(cardName, cardCost);
                                 deck.addCard(card);
+                                numberOfCards++;
                                 System.out.println("Added card: " + card.toString());
                             }
                         } finally {
@@ -35,5 +60,16 @@ public class ReadFile {
                         System.err.println("Error: inputFileForSlayTheSpireDeck.txt file not found");
                     }
 
-                }   
+                }
+                // Returns the list of invalid cards
+                public static List<Card> getInvalidCards() {
+                    return invalidCards;
+                }
+                //Returns if there are more than 1000 cards in the input file
+                public static boolean isOverAThousandCards() {
+                    return isOverAThousandCards;
+                }
             }
+        
+
+    

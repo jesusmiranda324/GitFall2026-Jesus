@@ -11,7 +11,39 @@ import com.itextpdf.text.pdf.PdfWriter;
 import com.itextpdf.text.DocumentException;
 
 public class CreateReport {
-    void createReport(int deckID, Deck deck) {
+    void createVOIDReport(int deckID) {
+            String filePath = "SpireDeck_" + String.valueOf(deckID) + "(VOID).pdf";
+
+            // Create a new PDF document(included in the iText library)
+            Document document = new Document();
+
+            try (FileOutputStream fos = new FileOutputStream(filePath)) {
+                // Create a PDF writer instance to write the document
+                PdfWriter.getInstance(document, fos);
+                document.open();
+                document.add(new Paragraph("Slay the Spire Deck Report:"));
+                document.add(new Paragraph("Deck ID: " + deckID));
+                document.add(new Paragraph("The deck is invalid due to the following reasons:"));
+                if (ReadFile.isOverAThousandCards()) {
+                    document.add(new Paragraph("- The deck has more than 1000 cards."));
+                }
+                if (ReadFile.getInvalidCards().size() > 10) {
+                    document.add(new Paragraph("- The deck has more than 10 invalid cards."));
+                    document.add(new Paragraph("Invalid cards:"));
+                    for (Card card : ReadFile.getInvalidCards()) {
+                        document.add(new Paragraph(card.toString()));
+                    }
+                }
+                document.close();
+
+                System.out.println("Void report created successfully at: " + filePath);
+            } catch (IOException | DocumentException e) {
+                System.err.println("Error creating void report: " + e.getMessage());
+            }
+        }
+       
+        //Creates a PDF report of the deck with the deck ID, total cost, and cost histogram
+        void createReport(int deckID, Deck deck) {
         String filePath = "SpireDeck_" + String.valueOf(deckID) + ".pdf";
 
         // Create a new PDF document(included in the iText library)
@@ -31,12 +63,24 @@ public class CreateReport {
             for (int i = 0; i < costHistogram.length; i++) {
                 document.add(new Paragraph("Cost " + i + ": " + costHistogram[i]));
             }
-
+            //print the invalid cards in the report if there are any
+            if (ReadFile.getInvalidCards().size() > 0) {
+                document.add(new Paragraph("Invalid Cards:"));
+                for (Card card : ReadFile.getInvalidCards()) {
+                    document.add(new Paragraph(card.toString()));
+                }
+            }
             document.close();
 
             System.out.println("Report created successfully at: " + filePath);
         } catch (IOException | DocumentException e) {
             System.err.println("Error creating report: " + e.getMessage());
         }
+    }
+    public boolean isVOIDReportNeeded() {
+        boolean ifTrueCreateVoidReport =
+            ReadFile.isOverAThousandCards()
+            || ReadFile.getInvalidCards().size() > 10;
+        return ifTrueCreateVoidReport;
     }
 }

@@ -1,11 +1,3 @@
-import java.io.File;
-import java.util.Scanner;
-import java.io.FileNotFoundException;
-import java.util.Random;
-import java.util.HashMap;
-import java.util.Map;
-
-
 class SlayTheSpire {
             public static void main(String[] args) {
             System.out.println("Welcome to Slay the Spire!");
