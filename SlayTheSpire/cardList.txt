@@ -1,0 +1,361 @@
+Strike
+Defend
+Bash
+Anger
+Body Slam
+Clash
+Cleave
+Clothesline
+Headbutt
+Heavy Blade
+Iron Wave
+Perfected Strike
+Pommel Strike
+Sword Boomerang
+Thunderclap
+Twin Strike
+Wild Strike
+Blood for Blood
+Carnage
+Dropkick
+Hemokinesis
+Pummel
+Rampage
+Reckless Charge
+Searing Blow
+Sever Soul
+Uppercut
+Whirlwind
+Bludgeon
+Feed
+Fiend Fire
+Immolate
+Reaper
+Armaments
+Flex
+Havoc
+Shrug It Off
+True Grit
+Warcry
+Battle Trance
+Bloodletting
+Burning Pact
+Disarm
+Dual Wield
+Entrench
+Flame Barrier
+Ghostly Armor
+Infernal Blade
+Intimidate
+Power Through
+Rage
+Second Wind
+Seeing Red
+Sentinel
+Shockwave
+Spot Weakness
+Double Tap
+Exhume
+Impervious
+Limit Break
+Offering
+Combust
+Dark Embrace
+Evolve
+Feel No Pain
+Fire Breathing
+Inflame
+Metallicize
+Rupture
+Barricade
+Berserk
+Brutality
+Corruption
+Demon Form
+Juggernaut
+Neutralize
+Survivor
+Bane
+Dagger Spray
+Dagger Throw
+Flying Knee
+Poisoned Stab
+Quick Slash
+Slice
+Sneaky Strike
+Sucker Punch
+All-Out Attack
+Backstab
+Choke
+Dash
+Endless Agony
+Eviscerate
+Finisher
+Flechettes
+Heel Hook
+Masterful Stab
+Predator
+Riddle with Holes
+Skewer
+Die Die Die
+Glass Knife
+Grand Finale
+Unload
+Acrobatics
+Backflip
+Blade Dance
+Cloak and Dagger
+Deadly Poison
+Deflect
+Dodge and Roll
+Outmaneuver
+Piercing Wail
+Prepared
+Blur
+Bouncing Flask
+Calculated Gamble
+Catalyst
+Concentrate
+Crippling Cloud
+Distraction
+Escape Plan
+Expertise
+Leg Sweep
+Reflex
+Setup
+Tactician
+Terror
+Adrenaline
+Alchemize
+Bullet Time
+Burst
+Corpse Explosion
+Doppelganger
+Malaise
+Nightmare
+Phantasmal Killer
+Storm of Steel
+Accuracy
+Caltrops
+Footwork
+Infinite Blades
+Noxious Fumes
+Well-Laid Plans
+A Thousand Cuts
+After Image
+Envenom
+Tools of the Trade
+Wraith Form
+Dualcast
+Zap
+Ball Lightning
+Barrage
+Beam Cell
+Claw
+Cold Snap
+Compile Driver
+Go for the Eyes
+Rebound
+Streamline
+Sweeping Beam
+Blizzard
+Bullseye
+Doom and Gloom
+FTL
+Melter
+Rip and Tear
+Scrape
+Sunder
+All for One
+Core Surge
+Hyperbeam
+Meteor Strike
+Thunder Strike
+Charge Battery
+Coolheaded
+Hologram
+Leap
+Recursion
+Stack
+Steam Barrier
+TURBO
+Aggregate
+Auto-Shields
+Boot Sequence
+Chaos
+Chill
+Consume
+Darkness
+Double Energy
+Equilibrium
+Force Field
+Fusion
+Genetic Algorithm
+Glacier
+Overclock
+Recycle
+Reinforced Body
+Reprogram
+Skim
+Tempest
+White Noise
+Amplify
+Fission
+Multi-Cast
+Rainbow
+Reboot
+Seek
+Capacitor
+Defragment
+Heatsinks
+Hello World
+Loop
+Self Repair
+Static Discharge
+Storm
+Biased Cognition
+Buffer
+Creative AI
+Echo Form
+Electrodynamics
+Machine Learning
+Eruption
+Vigilance
+Bowling Bash
+Consecrate
+Crush Joints
+Cut Through Fate
+Empty Fist
+Flurry of Blows
+Flying Sleeves
+Follow-Up
+Just Lucky
+Sash Whip
+Carve Reality
+Conclude
+Fear No Evil
+Reach Heaven
+Sands of Time
+Signature Move
+Talk to the Hand
+Tantrum
+Wallop
+Weave
+Wheel Kick
+Windmill Strike
+Brilliance
+Lesson Learned
+Ragnarok
+Crescendo
+Empty Body
+Evaluate
+Halt
+Pressure Points
+Prostrate
+Protect
+Third Eye
+Tranquility
+Collect
+Deceive Reality
+Empty Mind
+Foreign Influence
+Indignation
+Inner Peace
+Meditate
+Perseverance
+Pray
+Sanctity
+Simmering Fury
+Swivel
+Wave of the Hand
+Worship
+Wreath of Flame
+Alpha
+Blasphemy
+Conjure Blade
+Deus Ex Machina
+Judgment
+Omniscience
+Scrawl
+Spirit Shield
+Vault
+Wish
+Battle Hymn
+Fasting
+Foresight
+Like Water
+Mental Fortress
+Nirvana
+Rushdown
+Study
+Deva Form
+Devotion
+Establishment
+Master Reality
+Dramatic Entrance
+Flash of Steel
+Mind Blast
+Swift Strike
+Hand of Greed
+Bite
+Expunger
+Ritual Dagger
+Shiv
+Smite
+Through Violence
+Bandage Up
+Blind
+Dark Shackles
+Deep Breath
+Discovery
+Enlightenment
+Finesse
+Forethought
+Good Instincts
+Impatience
+Jack of All Trades
+Madness
+Panacea
+Panic Button
+Purity
+Trip
+Apotheosis
+Chrysalis
+Master of Strategy
+Metamorphosis
+Secret Technique
+Secret Weapon
+The Bomb
+Thinking Ahead
+Transmutation
+Violence
+Apparition
+Beta
+Insight
+J.A.X.
+Miracle
+Safety
+Magnetism
+Mayhem
+Panache
+Sadistic Nature
+Omega
+Burn
+Dazed
+Slimed
+Void
+Wound
+Ascender's Bane
+Clumsy
+Curse of the Bell
+Decay
+Doubt
+Injury
+Necronomicurse
+Normality
+Pain
+Parasite
+Pride
+Regret
+Shame
+Writhe
