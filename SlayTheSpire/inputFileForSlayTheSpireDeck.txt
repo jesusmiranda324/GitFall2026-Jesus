@@ -7,3 +7,4 @@ Genetic Algorithm:1
 Strike:1
 Genetic Algorithm:1
 Advanced Strike:8
+Balanced Strike:3

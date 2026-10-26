@@ -11,4 +11,11 @@
                     public String toString() {
                     return name + " (Cost: " + cost + ")";
                 }
+                // Getters for name and cost
+                public String getName() {
+                    return name;
+                }
+                public int getCost() {
+                    return cost;
+                }
             }
